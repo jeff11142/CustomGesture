@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- // @Jeff add for pattern lock 2022/06/07 -->
+    <!-- 手勢解鎖自定義屬性 -->
+    <declare-styleable name="GestureLockView">
+        <!-- 點半徑比例（取值範圍[0F,1F]） -->
+        <attr name="radius_ratio" format="float"/>
+        <!-- 線厚度（粗細值） -->
+        <attr name="line_thickness" format="dimension"/>
+        <!-- 正常狀態畫筆顏色 -->
+        <attr name="normal_color" format="color|reference" />
+        <!-- 按下狀態畫筆顏色 -->
+        <attr name="pressed_color" format="color|reference" />
+        <!-- 出錯狀態畫筆顏色 -->
+        <attr name="error_color" format="color|reference" />
+        <!-- 正確狀態畫筆顏色 -->
+        <attr name="right_color" format="color|reference" />
+        <!-- 是否顯示輔助線 -->
+        <attr name="is_show_guides" format="boolean" />
+        <!-- 連線是否繪製在頂部 -->
+        <attr name="is_line_top" format="boolean" />
+        <!-- 是否使用動畫 -->
+        <attr name="is_use_animation" format="boolean" />
+        <!-- 動畫時長 -->
+        <attr name="animation_duration" format="integer"/>
+        <!-- 動畫縮放類型 -->
+        <attr name="animation_scale_mode">
+            <enum name="normal" value="0" /> <!-- 正常縮放 -->
+            <enum name="reverse" value="1" /> <!-- 反轉縮放 -->
+        </attr>
+        <!-- 動畫縮放比例 -->
+        <attr name="animation_scale_rate" format="float"/>
+        <!-- 是否使用震動 -->
+        <attr name="is_use_vibrate" format="boolean" />
+        <!-- 震動時長 -->
+        <attr name="vibrate_duration" format="integer"/>
+        <!-- 正常狀態點圖片 -->
+        <attr name="normal_image" format="reference" />
+        <!-- 按下狀態點圖片 -->
+        <attr name="pressed_image" format="reference" />
+        <!-- 出錯狀態點圖片 -->
+        <attr name="error_image" format="reference" />
+    </declare-styleable>
+
+    <!-- 手勢解鎖縮略圖自定義屬性 -->
+    <declare-styleable name="GestureLockThumbnailView">
+        <!-- 點半徑比例（取值範圍[0F,1F]） -->
+        <attr name="thumbnail_ratio" format="float" />
+        <!-- 縮略圖顏色 -->
+        <attr name="thumbnail_color" format="color|reference" />
+    </declare-styleable>
+</resources>

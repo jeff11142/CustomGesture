@@ -1,4 +1,4 @@
-package com.example.custom_gesture_lib;
+package com.example.custom_gesture_lib.gesture.view.listener;
 
 public interface OnGestureLockListener {
 

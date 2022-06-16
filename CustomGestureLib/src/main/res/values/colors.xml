@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- // @Jeff add for pattern lock 2022/06/07 -->
+    <color name="gesture_special_background">#303030</color>
+    <color name="gesture_common_background">#FFFFFF</color>
+    <color name="gesture_special_text">#FFFFFF</color>
+    <color name="gesture_common_title_text">#2AABEE</color>
+    <color name="gesture_common_text">#000000</color>
+</resources>

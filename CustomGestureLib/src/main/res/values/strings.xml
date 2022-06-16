@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- // @Jeff add for pattern lock 2022/06/07 -->
+    <string name="StepOne">Step 1</string>
+    <string name="StepTwo">Step 2</string>
+    <string name="StepThree">Step 3</string>
+    <string name="StepFour">Step 4</string>
+    <string name="Null"></string>
+    <string name="CommonGestureLookText">Please enter common gesture</string>
+    <string name="CommonGestureLookAgainText">Confirm the common gesture again</string>
+    <string name="SpecialGestureLookText">Please enter special gesture</string>
+    <string name="SpecialGestureLookAgainText">Confirm the special gesture again</string>
+    <string name="GestureLookText">Please enter the gesture to unlock</string>
+    <string name="GetCommonGestureError">Sorry for losing your common gesture, please bind again</string>
+    <string name="GetSpecialGestureError">Sorry for losing your special gesture, please bind again</string>
+    <string name="SpecialGestureCantSameAsCommon">Special gestures cannot be the same as general gestures</string>
+    <string name="ForgotGesture">Forgot Pattern</string>
+    <string name="Redraw">Redraw</string>
+    <string name="Setting">Setting</string>
+    <string name="GestureSetting">Gesture Setting</string>
+    <string name="Gesture">Gesture</string>
+    <string name="SettingHint">Select account to enable logout function</string>
+    <string name="LoginFirst">Please login first</string>
+    <string name="GestureLengthNotEnough">Gesture length must not be less than 4</string>
+
+    <string name="Cancel">Cancel</string>
+    <string name="Reset">Reset</string>
+    <string name="Update">UPDATE</string>
+</resources>
