@@ -2,4 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.custom_gesture_lib">
 
+    <application android:allowBackup="true">
+        <activity
+            android:name=".gesture.GestureActivity"
+            android:exported="true"></activity>
+    </application>
 </manifest>
