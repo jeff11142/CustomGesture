@@ -30,7 +30,7 @@ import retrofit2.Callback
 import retrofit2.Response
 
 
-class GestureActivity : AppCompatActivity(), OnGestureLockListener {
+class CustomGestureActivity : AppCompatActivity(), OnGestureLockListener {
     private lateinit var binding: ActivityGestureLookBinding
     private var updateDialog: AlertDialog? = null
     private var forgotDialog: AlertDialog? = null
@@ -92,7 +92,7 @@ class GestureActivity : AppCompatActivity(), OnGestureLockListener {
     private fun showUpdateDialog(versionInfo: VersionInfo) {
         if (!isUpdateDialogShowed) {
             if (updateDialog == null) {
-                val builder = AlertDialog.Builder(this@GestureActivity)
+                val builder = AlertDialog.Builder(this@CustomGestureActivity)
                 builder.setCancelable(false)
                 builder.setMessage("App has a new version.\nDo you want to update?")
                 if (versionInfo.force == "0") {
@@ -122,7 +122,7 @@ class GestureActivity : AppCompatActivity(), OnGestureLockListener {
 
     private fun showForgotDialog() {
         if (forgotDialog == null) {
-            val builder = AlertDialog.Builder(this@GestureActivity)
+            val builder = AlertDialog.Builder(this@CustomGestureActivity)
             builder.setCancelable(false)
             builder.setMessage("Do you want to reset pattern ?")
             builder.setPositiveButton(
@@ -131,7 +131,7 @@ class GestureActivity : AppCompatActivity(), OnGestureLockListener {
             builder.setNegativeButton(
                 getString(R.string.Reset)
             ) { _, _ ->
-                clearPattern(this@GestureActivity)
+                clearPattern(this@CustomGestureActivity)
                 setResult(GESTURE_FORGOT)
                 finish()
             }
@@ -278,7 +278,7 @@ class GestureActivity : AppCompatActivity(), OnGestureLockListener {
         binding.apply {
             gestureView.apply {
                 setPainter(CirclePainter())
-                setGestureLockListener(this@GestureActivity)
+                setGestureLockListener(this@CustomGestureActivity)
             }
 
             tvGestureDec.apply {
